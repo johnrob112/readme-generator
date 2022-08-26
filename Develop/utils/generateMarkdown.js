@@ -11,31 +11,50 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-  
-  ## Description 
+function generateMarkdown(data, gitInfo) {
+  return `
+  # **${data.title}**
+    
+  ${data.badge}
+  ## Description
   ${data.description}
   ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## Installation 
-  ${data.install}
-  ## Usage 
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributors](#Contributors)
+  - [Test](#Test)
+  - [Questions](#Questions)
+  - [Repository Link](#Repository)
+  - [GitHub Info](#GitHub)
+  ## Installation
+  ${data.installation}
+  ## Usage
   ${data.usage}
-  ## License 
-  This project is license under ${data.license}
-  ## Contributing 
-  ${data.contributors}
-  ## Tests
+  ## License
+  ${data.license}
+  ## Contributors
+  ${data.contributing}
+  ## Test
   ${data.test}
   ## Questions
-  If you have any questions about this projects, please contact me directly at ${data.email}. You can view more of my projects at https://github.com/${data.github}.
+  - What is the title of your project?
+  - Please provide a description for your project
+  - Please provide the installation instructions for your project
+  - Please provide the usage for your project
+  - Please provide the proejct license that you would like (MIT or GNU)
+  - Please provide the contributors
+  - Please provide the project tests
+  - What is your github user name?
+  - What is your repository link?
+  ## Repository
+  - [Project-Repo](${data.repo})
+  ## GitHub
+  ![Image](${gitInfo.gitImage})
+  - ${gitInfo.name}
+  - [Github-Profile](${gitInfo.profile})
+  - ${gitInfo.email}
 `;
 }
 

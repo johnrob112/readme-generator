@@ -33,8 +33,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "contributing",
-        message: "Please provide the contributers"
+        name: "contributors",
+        message: "Please provide the contributors"
     },
     {
         type: "input",
