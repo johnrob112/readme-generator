@@ -28,12 +28,12 @@ const questions = [
     },
     {
         type: "input",
-        name: "license",
+        name: "badge",
         message: "Please provide the proejct license that you would like (MIT or GNU)"
     },
     {
         type: "input",
-        name: "contributors",
+        name: "contributing",
         message: "Please provide the contributors"
     },
     {

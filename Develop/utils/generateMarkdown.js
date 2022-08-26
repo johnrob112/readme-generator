@@ -22,7 +22,6 @@ function generateMarkdown(data, gitInfo) {
   - [Description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
-  - [License](#License)
   - [Contributors](#Contributors)
   - [Test](#Test)
   - [Questions](#Questions)
