@@ -2,6 +2,9 @@
   # **README Generator**
     
   MIT
+  
+  ##
+  Link to a screen cap of me using the generator: https://drive.google.com/file/d/1o6l1ViTkD89XD56CDmcq9-kjRVR2Jums/view
   ## Description
   For this project I was tasked to create a code to generate README files using node.js. I used npm to install inquirer and axios.
   ## Table of Contents
